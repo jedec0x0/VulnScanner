@@ -1,2 +1,2 @@
 # VulnScanner
-Python Vulnerability-Scanning Script
+Super Simple Python Vulnerability-Scanning Script
