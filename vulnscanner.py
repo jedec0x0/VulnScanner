@@ -1,4 +1,4 @@
-import os
+*import os
 import socket
 import sys
 
@@ -38,10 +38,10 @@ def main():
         ip = '192.168.0.' +str(x) # todo: allow user to define what IP range to scan at the commandline when command is executed
 # finally: the main function
         for port in portList:
-            print '[.] testing ' + str(ip) + ':' + str(port)
+            print '[*] testing ' + str(ip) + ':' + str(port)
             banner = retBanner(ip, port) # calls function retBanner
             if banner:
-                print '[.] checking ' + ip + ': ' + banner
+                print '[*] checking ' + ip + ': ' + banner
                 checkVuln(banner, seedfile) # calls function checkVuln
 if __name__ == '__main__':
     main()
